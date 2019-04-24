@@ -1,0 +1,26 @@
+{
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "description": "raphael valdez react portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "portfolio"
+  ],
+  "author": "Raphael Valdez",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.30.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.1"
+  }
+}
