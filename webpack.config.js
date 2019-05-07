@@ -1,7 +1,14 @@
-const HTMLWebPackPlugin = require("html-webpack-plugin");
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 module.exports = {
+  entry: './src/index.jsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
+    publicPath: '/'
+  },
   module: {
     rules: [
       {
@@ -38,32 +45,20 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css', '.scss'],
+  },
   plugins: [
-    new HTMLWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: "./public/index.html",
-      filename: "./index.html"
     }),
     new WebpackBuildNotifierPlugin({
       title: "My Project Webpack Build",
     
       suppressSuccess: true
-    })    
-  ],
-  resolve: {
-    extensions: ['.js', '.jsx', '.css', '.scss'],
-  },
-  devServer: {
-    host: '192.168.1.20',
-    port: 8888,
-    // hot: true,
-    // inline: true,
-    // publicPath: '/static/scripts/',
-    // contentBase: 'src/dist/',
-    // watchContentBase: true,
-    // historyApiFallback: {
-    //   rewrites: [
-    //     { from: /^\/pos\/.*$/, to: '/pos/' },
-    //   ],
-    // },
-  },
+    })
+  ]
 };

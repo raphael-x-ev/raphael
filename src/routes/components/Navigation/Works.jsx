@@ -1,17 +1,18 @@
 import React from 'react'
 
 // Style
-import './Skills.scss'
+import './Works.scss'
 
-class Skills extends React.Component {
+class Works extends React.Component {
 
   render() {
+
     return (
       <div>
-        Skills
+        Works
       </div>
     )
   }
 }
 
-export default Skills
+export default Works

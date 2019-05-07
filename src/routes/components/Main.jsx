@@ -30,26 +30,18 @@ const getWidth = () => {
 
 class Main extends React.Component {
   state = {
-    // selectedSaleId: null,
-    // selectedCategoryId: null,
-    // isFilterMenuOpen: false,
-    // isSelected: false,
-    p1: 'Front-End'
+    p1: '< Front-End />'
   }
 
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
-  handleProfilePic = (clickEvent) => {
-    console.log('hello!!')
-  }
-
   handleTagChange = (clickEvent) => {
     const { p1 } = this.state
-    if (p1 === 'Front-End') {
+    if (p1 === '< Front-End />') {
       this.setState({ p1: 'React.js'})
     } else {
-      this.setState({ p1: 'Front-End'})
+      this.setState({ p1: '< Front-End />'})
     }
   }
 
