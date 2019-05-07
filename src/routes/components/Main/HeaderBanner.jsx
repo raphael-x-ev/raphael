@@ -16,13 +16,20 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import { AnimateOnChange } from  'react-animation'
 
 // Style
 import './HeaderBanner.scss'
 
 class HeaderBanner extends React.Component {
-
+  static propTypes = {
+    // Data
+    p1: PropTypes.string,
+  }
+  
   render() {
+    const { p1 } = this.props
+    console.log(p1)
     return (
       <div className="header-banner">
         <Container text>
@@ -31,25 +38,25 @@ class HeaderBanner extends React.Component {
             as='h1'
             content='Raphael E. Valdez'
             inverted
-            // style={{
-            //   fontSize: mobile ? '2em' : '4em',
-            //   fontWeight: 'normal',
-            //   marginBottom: 0,
-            //   marginTop: mobile ? '1.5em' : '3em',
-            // }}
           />
           <Header
             className="header-banner-h2"
             as='h2'
-            content='Front-End / ReactJS Developer'
             inverted
-            // style={{
-            //   fontSize: mobile ? '1.5em' : '1.7em',
-            //   fontWeight: 'normal',
-            //   marginTop: mobile ? '0.5em' : '1.5em',
-            // }}
-          />
-          <Button color='linkedin' animated>
+          >
+            
+            <AnimateOnChange
+              animationIn="custom-animation-in 500ms ease-out forwards"
+              animationOut="custom-animation-out 600ms ease-out forwards"
+              durationOut={500}
+            >
+            {p1}
+            </AnimateOnChange>
+            {` Developer`}
+          </Header>
+          <Button 
+            // onClick={this.handleTagChange}
+            color='linkedin' animated>
             <Button.Content visible>
              <Icon name='linkedin' />
             </Button.Content>

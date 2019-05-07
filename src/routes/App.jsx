@@ -8,6 +8,7 @@ import {
 
 // Components
 import Main from './components/Main'
+import Navigation from './components/Navigation'
 
 // Style
 import './App.scss'
@@ -30,6 +31,7 @@ class App extends React.Component {
             >        
               <Main />
             </Segment>
+            <Navigation />
           </Visibility>
 
         </Responsive>    

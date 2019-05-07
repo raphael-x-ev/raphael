@@ -34,14 +34,28 @@ class Main extends React.Component {
     // selectedCategoryId: null,
     // isFilterMenuOpen: false,
     // isSelected: false,
+    p1: 'Front-End'
   }
 
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
+  handleProfilePic = (clickEvent) => {
+    console.log('hello!!')
+  }
+
+  handleTagChange = (clickEvent) => {
+    const { p1 } = this.state
+    if (p1 === 'Front-End') {
+      this.setState({ p1: 'React.js'})
+    } else {
+      this.setState({ p1: 'Front-End'})
+    }
+  }
+
   render() {
     const { children } = this.props
-    const { fixed } = this.state
+    const { fixed, p1 } = this.state
 
     return (
       <div
@@ -52,6 +66,7 @@ class Main extends React.Component {
             <Grid.Column />
             <Grid.Column width={8}>
                 <Image
+                  onClick={this.handleTagChange}
                   className="main-profile-image"
                   src='/src/assets/profileImg2.jpg'
                   size='small'
@@ -65,7 +80,8 @@ class Main extends React.Component {
             <Grid.Column />
             </Grid.Column>
             <Grid.Column textAlign="center" width={6}>
-              <HeaderBanner />
+              <HeaderBanner p1={p1}/>
+              {console.log(`p1 is ${p1}`)}
             </Grid.Column>
             <Grid.Column>
             <Grid.Column />
