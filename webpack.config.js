@@ -3,12 +3,33 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 module.exports = {
-  entry: './src/index.jsx',
+  mode: 'production',
+  entry: {
+    index: './src/index.jsx',
+    another: './src/module_2.jsx'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].main.js',
     publicPath: '/'
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor_app',
+          chunks: 'all',
+          minChunks: 2
+        }
+      }
+    }
+  },
+  performance: {
+    hints: false,
+  },
+  devtool: false,
   module: {
     rules: [
       {
