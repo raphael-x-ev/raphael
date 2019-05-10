@@ -29,15 +29,17 @@
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-animation": "^1.0.9",
+    "react-customizable-progressbar": "^0.2.0",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "sass-loader": "^7.1.0",
     "semantic-ui-react": "^0.87.1",
     "style-loader": "^0.23.1",
-    "webpack": "^4.30.0",
+    "webpack": "^4.31.0",
     "webpack-build-notifier": "^1.0.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.3.1"
-  }
+  },
+  "dependencies": {}
 }

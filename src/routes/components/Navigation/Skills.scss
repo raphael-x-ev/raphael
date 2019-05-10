@@ -1,0 +1,19 @@
+.skills {
+  &-group {
+    margin-bottom: 100px !important;
+  }
+
+  &-circle {
+    margin-bottom: 130px !important;
+  }
+
+  &-progress {
+    width: 100%;
+    height: auto;
+    margin-right: -20px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -140px;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+  }
+}

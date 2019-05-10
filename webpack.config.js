@@ -68,6 +68,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    host: '192.168.1.20',
+    port: '8888',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.css', '.scss'],

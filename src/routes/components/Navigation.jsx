@@ -2,6 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
+  Container,
   Grid,
   Menu,
   Segment,
@@ -31,6 +32,7 @@ class Navigation extends React.Component {
     const { history } = this.props
 
     history.push('/developer/skills')
+    this.setState({ activeItem: 'Skills'})
   }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -39,51 +41,53 @@ class Navigation extends React.Component {
     const { history } = this.props
 
     history.push('/developer/skills')
+    this.setState({ activeItem: 'Skills'})
   }
 
   handleTimelineMenuClick = () => {
     const { history } = this.props
 
     history.push('/developer/timeline')
+    this.setState({ activeItem: 'Timeline'})
   }
 
   handleWorkMenuClick = () => {
     const { history } = this.props
 
     history.push('/developer/works')
+    this.setState({ activeItem: 'Works'})
   }
 
   render() {
     const { activeItem } = this.state
     return (
-      <div>
+      <div className="navigation">
         <Grid columns='equal'>
           <Grid.Row stretched>
             <Grid.Column />
-            <Grid.Column width={8}>
+            <Grid.Column width={10}>
             <Menu pointing secondary>
               <Menu.Item
-              name='Skills'
+              className="navigation-header"
               active={activeItem === 'Skills'}
               onClick={this.handleSkillMenuClick}
-            />
+              >
+                Skills
+              </Menu.Item>
               <Menu.Item
-                name='Timeline'
+                className="navigation-header"
                 active={activeItem === 'Timeline'}
                 onClick={this.handleTimelineMenuClick}
-              />
+              >
+                Timeline
+              </Menu.Item>
               <Menu.Item
-                name='Works'
+                className="navigation-header"
                 active={activeItem === 'Works'}
                 onClick={this.handleWorkMenuClick}
-              />
-              {/* <Menu.Menu position='right'>
-                <Menu.Items
-                  name='logout'
-                  active={activeItem === 'logout'}
-                  onClick={this.handleItemClick}
-                />
-              </Menu.Menu> */}
+              >
+                Works
+              </Menu.Item>
             </Menu>
             <Switch>
               <Route path="/developer/skills">
@@ -96,9 +100,6 @@ class Navigation extends React.Component {
                 <Works />
               </Route>
             </Switch>            
-            {/* <Segment>
-              <img src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-            </Segment> */}
             </Grid.Column>
             <Grid.Column />
           </Grid.Row>
@@ -107,13 +108,13 @@ class Navigation extends React.Component {
             <Grid.Column />
             </Grid.Column>
             <Grid.Column textAlign="center" width={6}>
-            
+              
             </Grid.Column>
             <Grid.Column>
             <Grid.Column />
             </Grid.Column>
           </Grid.Row>
-        </Grid>   
+        </Grid>
       </div>
     )
   }
