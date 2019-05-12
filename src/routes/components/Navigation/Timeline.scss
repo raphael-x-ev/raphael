@@ -1,0 +1,22 @@
+.timeline {
+  // background-color: red;
+  &-date {
+    display: 'block';
+    float: 'right';
+    padding: '120px' !important; 
+
+    &-icon {
+      font-size: 30px !important;
+    }
+  }
+  
+  &-item {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+
+    &-content {
+      font-size: 20px;
+    }
+  }
+
+
+}

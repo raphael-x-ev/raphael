@@ -76,12 +76,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: "Production",
       template: "./public/index.html",
     }),
     new WebpackBuildNotifierPlugin({
       title: "My Project Webpack Build",
     
       suppressSuccess: true
-    })
+    }),
   ]
 };

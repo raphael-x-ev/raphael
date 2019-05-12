@@ -30,7 +30,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#5d9cec"
               initialAnimation={true}
-              transition="2s ease 0.5s"
+              transition="1s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -78,7 +78,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#ff1ac6"  
               initialAnimation={true}
-              transition="2s ease 0.5s"
+              transition="1s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
