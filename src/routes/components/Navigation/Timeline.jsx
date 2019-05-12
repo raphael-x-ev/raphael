@@ -33,7 +33,7 @@ class Timeline extends React.Component {
               <p>
                 Worked as ReactJS Front-End Developer. Collaborated with different developers
                 to work on client systems, with the use of development languages and tools such as React,
-                Javascript, CSS/SASS, HTML, Redux, UI Frameworks (Material UI, Semantic UI, React Bootstrap) Webpack, ESLINT, JSX, VS Code, Atom, Docker, npm and GIT.
+                Javascript, MySQL, CSS/SASS, HTML, Redux, UI Frameworks (Material UI, Semantic UI, React Bootstrap) Webpack, ESLINT, JSX, VS Code, Atom, Docker, npm and GIT.
               </p>
             </div>
           </TimelineItem>
@@ -79,7 +79,7 @@ class Timeline extends React.Component {
               <h4>Front-End Developer</h4>
               <p>
                 Intern as Front-End Developer and Designer with use of Adobe Products (Fireworks, Photoshop, Illustrator)
-                Wordpress, Javascript, HTML, CSS/SASS.
+                Wordpress, Javascript, HTML, CSS/SASS, MySQL.
               </p>
             </div>
           </TimelineItem>

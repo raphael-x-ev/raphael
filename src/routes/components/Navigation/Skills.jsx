@@ -30,7 +30,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#5d9cec"
               initialAnimation={true}
-              transition="1s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -54,7 +54,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#e6e600"              
               initialAnimation={true}
-              transition="1s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -78,7 +78,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#ff1ac6"  
               initialAnimation={true}
-              transition="1s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -102,7 +102,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#00e68a" 
               initialAnimation={true}
-              transition="2s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -124,7 +124,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#33ffff" 
               initialAnimation={true}
-              transition="3s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -146,7 +146,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#ff661a" 
               initialAnimation={true}
-              transition="1s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -168,7 +168,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#cc33ff" 
               initialAnimation={true}
-              transition="3s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -192,7 +192,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#1a8cff" 
               initialAnimation={true}
-              transition="4s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
@@ -216,7 +216,7 @@ class Skills extends React.Component {
               pointerStrokeWidth={5}
               pointerStrokeColor="#ff1a1a" 
               initialAnimation={true}
-              transition="4s ease 0.5s"
+              transition="0.5s ease 0.5s"
               trackTransition="0s ease"
             >
                 <div className="skills-progress">
