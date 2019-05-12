@@ -60,7 +60,7 @@ class Main extends React.Component {
                 <Image
                   onClick={this.handleTagChange}
                   className="main-profile-image"
-                  src='/src/assets/profileImg2.jpg'
+                  src='/src/assets/Rafp.png'
                   size='small'
                   circular
                 />
@@ -72,8 +72,9 @@ class Main extends React.Component {
             <Grid.Column />
             </Grid.Column>
             <Grid.Column textAlign="center" width={6}>
-              <HeaderBanner p1={p1}/>
-              {console.log(`p1 is ${p1}`)}
+              <HeaderBanner
+                p1={p1}
+              />
             </Grid.Column>
             <Grid.Column>
             <Grid.Column />
