@@ -1,4 +1,5 @@
 .portfolio-about {
+  margin-top: 2em;
   &-image {
     width: 20px !important;
     height: 20px !important;
@@ -15,8 +16,14 @@
   }
 
   &-content {
+    margin-top: 0.5em !important;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     font-size: 20px;
     text-align: center;
+  }
+
+  &-image {
+    height: 5em !important;
+    width: auto !important;
   }
 }

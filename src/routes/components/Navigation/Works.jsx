@@ -75,7 +75,7 @@ class Works extends React.Component {
           <Popup
             trigger={
               <Card>
-              <Image src='/src/assets/HMS1.PNG' wrapped ui={false} />
+              <Image src='/src/assets/PORTFOLIO1.PNG' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>ReactJS PORTFOLIO WEBSITE</Card.Header>
                 <Card.Meta>2019</Card.Meta>

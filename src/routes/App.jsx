@@ -25,13 +25,13 @@ class App extends React.Component {
             onBottomPassedReverse={this.hideFixedMenu}
           >
             <Segment
-              inverted
+              className="src-app-main-background"
               textAlign='center'
               style={{ minHeight: 700, padding: '1em 0em' }}
               vertical
             >        
               <Main />
-            </Segment>
+            </Segment >
             <About />
             <Navigation />
           </Visibility>

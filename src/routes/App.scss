@@ -4,4 +4,11 @@
   min-height: 1820px;
   overflow: hidden;
   background-color: white;
+
+  &-main-background {
+    background-image: url("/src/assets/DSC_0159.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
 }

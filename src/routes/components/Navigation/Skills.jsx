@@ -14,7 +14,7 @@ class Skills extends React.Component {
 
   render() {
     return (
-      <div>    
+      <div className="skills">    
       <Grid columns={3} doubling stackable>
         <Grid.Row className="skills-group">
           <Grid.Column>
