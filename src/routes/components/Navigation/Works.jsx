@@ -18,7 +18,7 @@ class Works extends React.Component {
           <Popup
             trigger={
               <Card>
-              <Image src='/src/assets/BBC1.jpg' wrapped ui={false} />
+              <Image className="works-img" src='/src/assets/BBC1.jpg' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>BAGUIO'S BEST CHOICE</Card.Header>
                 <Card.Meta>2018-2019</Card.Meta>
@@ -37,7 +37,7 @@ class Works extends React.Component {
           <Popup
             trigger={
               <Card>
-              <Image src='/src/assets/POS1.PNG' wrapped ui={false} />
+              <Image className="works-img" src='/src/assets/POS1.PNG' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>BitPal POS BACKOFFICE</Card.Header>
                 <Card.Meta>2018-2019</Card.Meta>
@@ -56,7 +56,7 @@ class Works extends React.Component {
           <Popup
             trigger={
               <Card>
-              <Image src='/src/assets/HMS1.PNG' wrapped ui={false} />
+              <Image className="works-img" src='/src/assets/HMS1.PNG' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>HOSPITAL MANAGEMENT SYSTEM</Card.Header>
                 <Card.Meta>2017-2018</Card.Meta>
@@ -75,7 +75,7 @@ class Works extends React.Component {
           <Popup
             trigger={
               <Card>
-              <Image src='/src/assets/PORTFOLIO1.PNG' wrapped ui={false} />
+              <Image className="works-img" src='/src/assets/PORTFOLIO1.PNG' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>ReactJS PORTFOLIO WEBSITE</Card.Header>
                 <Card.Meta>2019</Card.Meta>

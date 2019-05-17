@@ -68,7 +68,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    host: '192.168.1.20',
+    host: '192.168.1.2',
     port: '8888',
   },
   resolve: {

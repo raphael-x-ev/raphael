@@ -1,6 +1,7 @@
 // Core
 import React from 'react'
 import PropTypes from 'prop-types'
+import { withRouter } from 'react-router-dom'
 import {
   Button,
   Container,
@@ -27,6 +28,12 @@ class HeaderBanner extends React.Component {
     p1: PropTypes.string,
   }
   
+  handleLinkedInClick = () => {
+    const { history } = this.props
+    const path = 'https://www.linkedin.com/in/raphael-e-valdez/'
+
+    history.push(path)
+  }
   render() {
     const { p1 } = this.props
     console.log(p1)
@@ -61,7 +68,7 @@ class HeaderBanner extends React.Component {
              <Icon name='linkedin' />
             </Button.Content>
             <Button.Content hidden>
-              LinkedIn
+              <a className="header-banner-a" target="_blank" href="https://www.linkedin.com/in/raphael-e-valdez/">linkedIn</a>
             </Button.Content>
           </Button>
           <Button color='grey' animated='vertical'>
@@ -69,7 +76,7 @@ class HeaderBanner extends React.Component {
              <Icon name='github' />
             </Button.Content>
             <Button.Content hidden>
-              gitHub
+              <a className="header-banner-a" target="_blank" href="https://github.com/RaphaelValdez">gitHub</a>
             </Button.Content>
           </Button>
           <Button color='teal' animated>
@@ -77,7 +84,7 @@ class HeaderBanner extends React.Component {
              <Icon name='github alternate' />
             </Button.Content>
             <Button.Content hidden>
-              showcase
+              <a className="header-banner-a" target="_blank" href="https://www.gitshowcase.com/raphaelvaldez">gitShow</a>
             </Button.Content>
           </Button>
         </Container>
@@ -86,4 +93,4 @@ class HeaderBanner extends React.Component {
   }
 }
 
-export default HeaderBanner
+export default withRouter(HeaderBanner)

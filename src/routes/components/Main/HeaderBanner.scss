@@ -9,6 +9,15 @@
     margin-top: 3em !important;
   }
 
+  &-a {
+    color: white;
+    text-decoration: none; /* no underline */
+  }
+
+  &-a:hover {
+    color: black;
+  }
+
   &-h2 {
     font-family: 'Encode Sans Semi Expanded', sans-serif !important;
     font-size: 1.8em !important;
