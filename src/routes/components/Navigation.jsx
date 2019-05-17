@@ -31,8 +31,8 @@ class Navigation extends React.Component {
   componentDidMount() {
     const { history } = this.props
 
-    history.push('/developer/skills')
-    this.setState({ activeItem: 'Skills'})
+    history.push('/developer/timeline')
+    this.setState({ activeItem: 'Timeline'})
   }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -68,18 +68,18 @@ class Navigation extends React.Component {
             <Grid.Column width={10}>
             <Menu pointing secondary>
               <Menu.Item
-              className="navigation-header"
-              active={activeItem === 'Skills'}
-              onClick={this.handleSkillMenuClick}
-              >
-                Skills
-              </Menu.Item>
-              <Menu.Item
                 className="navigation-header"
                 active={activeItem === 'Timeline'}
                 onClick={this.handleTimelineMenuClick}
               >
                 Timeline
+              </Menu.Item>
+              <Menu.Item
+              className="navigation-header"
+              active={activeItem === 'Skills'}
+              onClick={this.handleSkillMenuClick}
+              >
+                Skills
               </Menu.Item>
               <Menu.Item
                 className="navigation-header"
@@ -90,11 +90,11 @@ class Navigation extends React.Component {
               </Menu.Item>
             </Menu>
             <Switch>
-              <Route path="/developer/skills">
-                <Skills />
-              </Route>
               <Route path="/developer/timeline">
                 <Timeline />
+              </Route>
+              <Route path="/developer/skills">
+                <Skills />
               </Route>
               <Route  path="/developer/works">
                 <Works />
